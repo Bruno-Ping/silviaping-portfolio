@@ -1,0 +1,7 @@
+.DS_Store
+__pycache__/
+.env
+data/
+uploads/
+*.sqlite3
+deploy/remote.env

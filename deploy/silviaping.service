@@ -1,0 +1,15 @@
+[Unit]
+Description=Silvia Ping Portfolio CMS
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/bruno/apps/silviaping
+EnvironmentFile=/home/bruno/apps/silviaping/remote.env
+Environment=PORT=5188
+ExecStart=/usr/bin/python3 /home/bruno/apps/silviaping/app.py
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=default.target
