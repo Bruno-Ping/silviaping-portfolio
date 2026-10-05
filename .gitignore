@@ -5,3 +5,5 @@ data/
 uploads/
 *.sqlite3
 deploy/remote.env
+.playwright-cli/
+output/
